@@ -70,7 +70,7 @@ c5f9de70-bba5-11e8-b2ba-ac1f6b6435d0_4|2, 16|![c5f9de70-bba5-11e8-b2ba-ac1f6b643
 
 Notice that all images displayed above were labelled as '2|16' - Nucleoli and Cytosol, but only one of them (the first one) is correctly labelled. Applying the heuristics corresponding to both classes gave a really good indication of whether an image was correctly labelled as '2|16'. After repeating a similar process for a lot of images, I created a dataset of ~240,000 images and 144 unique labels. The dataset is public at [https://www.kaggle.com/novice03/clean-data](https://www.kaggle.com/novice03/clean-data).
 
-For my highest scoring submission, I also trained a model on 26,000 slide-level images. These images were a balanced subset of the competition and public data. The above heuristics were not used to filter out slide-level images.
+For my highest scoring submission, I also trained a model on 26,000 slide-level images. These images were a balanced subset of the competition and public data. The above heuristics were not used to filter out slide-level images. Multi-label stratified k-fold was used to split data into train and validation sets.
 
 ## Training
 
