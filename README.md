@@ -94,7 +94,7 @@ Mobilenet v3|Focal Loss|180,000**|Tesla P100-PCIE-16GB|1hr 40mins
 
 \** Inception and mobilenet were trained in google colab, which had much harder data storage constraints than Kaggle notebooks. Densenet was trained on kaggle. The 180,000 images were a subset of the 240,000 images.
 
-The inception and mobilenet models used in both submissions are the same. For all models, resizing to 448x448, a random rotation of at most 270 degrees, and normalization was applied before training. During inference, 4x TTA was applied. For the first submission, the average of cell-level predictions and slide-level predictions was taken. For the second submission, the average of the all 3 cell-level models was taken. The weights of all 4 models can be found in the kaggle dataset in the ```weights``` folder. The training and inference notebooks are available as ```training.ipynb``` and ```inference.ipynb```.
+The inception and mobilenet models used in both submissions are the same. For all models, resizing to 448x448, a random rotation of at most 270 degrees, and normalization was applied before training. During inference, 4x TTA was applied. For the first submission, the average of cell-level predictions and slide-level predictions was taken. For the second submission, the average of the all 3 cell-level models was taken. The weights of all 4 models can be found in the kaggle dataset in the ```weights``` folder. The training and inference notebooks are available as ```training.ipynb``` and ```inference.ipynb``` in this repository.
 
 ## Conclusion 
 
